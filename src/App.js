@@ -1,17 +1,19 @@
 import './App.css';
 import {Route , Routes} from "react-router-dom";
+import {PrivateRoute} from './components/PrivateRoute';
+
 import {Navbar} from './components/Navbar';
 import {Home} from './components/Home';
-
 import {Contact} from './components/Contact';
 import {About} from './components/About';
 import {Products} from './components/Products';
 import {ProductDetails} from './components/ProductDetails';
 import{Users} from './components/User';
 import {UserDetails} from './components/UserDetails';
-
 import {Login} from './components/Login';
 import {Register} from './components/Register';
+import {Dashboard} from './components/Dashboard';
+import {Settings} from './components/Settings';
 
 function App() {
   return (
@@ -34,7 +36,9 @@ function App() {
 
         <Route path="/products" element={ <Products/> }></Route>
         <Route path="/products/:productsId" element={ <ProductDetails/> }></Route>
-
+        
+        <Route path="/dashboard" element={ <Dashboard/> }></Route>
+        <Route path="/dashboard/settings" element={ <Settings />}></Route>
 
         <Route path="*" element={ <div>Page not found</div> }></Route>
 

@@ -52,8 +52,7 @@ export const Register = () => {
     }
 
     return(
-        <section className="Register">
-        <div>    
+        // <section className="Register">  
         <form onSubmit={handleSubmit}>
             <table>
                 <thead>
@@ -110,7 +109,6 @@ export const Register = () => {
             </table>
 
         </form>
-        </div>
-        </section>
+        // </section>
     )
 }

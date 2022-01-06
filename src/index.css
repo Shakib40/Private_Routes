@@ -78,3 +78,25 @@ code {
   text-decoration: none;
   padding: 5px;
 }
+
+/* Login Page */
+
+.Login-section{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.Login-section div{
+  width: 48%;
+  margin: 0 auto;
+  margin-top:30px;
+  border: 1px solid #ccc;
+  height: 400px;
+}
+
+.Login-section form {
+  padding: 50px;
+  background : wheat;
+}
+

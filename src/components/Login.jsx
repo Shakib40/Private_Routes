@@ -35,15 +35,34 @@ export const Login = () => {
     } 
 
     return (
-        <div>
-        <form onSubmit={onSubmit}>
-           <input onChange={handleChange} type="text"  name="username" placeholder="Username" />
-           <input onChange={handleChange}type="text"  name="password" placeholder="Password" />
-           <input value = "submit" type="submit"/>
-           
+        <section className="Login-section">
+            <div>
+                <form onSubmit={onSubmit}>
+                    
+                    <table >
+                        <tbody>
+                            <tr>
+                                <td>Username</td>
+                                <td><input onChange={handleChange} type="text"  name="username" placeholder="Username" /></td>
+                            </tr>
 
-        </form>
-        <Register/>
-        </div>
+                            <tr>
+                                <td>Password</td>
+                                <td><input onChange={handleChange}type="text"  name="password" placeholder="Password" /></td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td><input value = "submit" type="submit"/></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+
+            <div> <Register/> </div>
+
+        </section>
     )
 };

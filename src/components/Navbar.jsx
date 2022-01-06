@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom';
 
 import React from 'react';
 import {AuthContext} from '../context/AuthContext';
-
+import {PrivateRoute} from './PrivateRoute';
 
 export const Navbar = () => {
     
@@ -18,10 +18,6 @@ export const Navbar = () => {
 
             <Link to="/">Home</Link>
 
-            <Link to="/about">About</Link>
-
-            <Link to="/contactus">Contact</Link>
-
             <Link to="/products">Products</Link>
 
             <Link to="/users">Users</Link>
@@ -29,7 +25,15 @@ export const Navbar = () => {
            { isAuth ?
                 <a onClick={logoutNow}>Logout({username})</a> :
                 <Link to="/login">Login</Link>
-           }    
+           }
+
+           {isAuth ?
+                <>
+                <Link to="/dashboard">Dashboard</Link> 
+                <Link to="/dashboard/settings">Settings</Link>
+                </> : null 
+            }    
+              
 
         </div>
         

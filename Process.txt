@@ -9,3 +9,7 @@ vercel login
 
 versel
 
+and CI False 
+npm run build
+
+versel
