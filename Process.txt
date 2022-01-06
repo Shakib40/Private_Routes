@@ -1,0 +1,10 @@
+npm install react-router-dom
+
+npm i -g json-server
+json-server db.json --port 3001 --watch
+
+npm i -g vercel
+
+vercel login
+
+versel
