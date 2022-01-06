@@ -1,8 +1,7 @@
 import React from 'react';
-
 import { useNavigate , useLocation } from 'react-router-dom';
-
 import {AuthContext} from '../context/AuthContext';
+import {Register} from './Register';
 
 export const Login = () => {
     
@@ -41,7 +40,10 @@ export const Login = () => {
            <input onChange={handleChange} type="text"  name="username" placeholder="Username" />
            <input onChange={handleChange}type="text"  name="password" placeholder="Password" />
            <input value = "submit" type="submit"/>
+           
+
         </form>
+        <Register/>
         </div>
     )
 };
